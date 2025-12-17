@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petición de servicios</title>
+    <title>Cuéntame tu idea</title>
 </head>
 <body>
     <header>
-        <h1>¿Trabajamos juntos?</h1>
+        <h1>Tu proyecto empieza aquí</h1>
+        <p>Cuéntame qué tienes en mente y veamos juntos cómo hacerlo realidad.</p>
     </header>
     <form action="" method="post">
         <fieldset>
-            <legend>Datos de contacto</legend>
+            <legend>Empecemos por lo básico</legend>
+            <label for="nombre">¿Cómo te llamas?</label>
+            <br>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="empresa">¿Es para tu empresa?</label>
+            <br>
+            <input type="text" id="empresa" name="empresa" placeholder="Dime cómo se llama">
+            <br>
+            <label for="email">¿A qué email te escribo?</label>
+            <br>
+            <input type="email" id="email" name="email" required placeholder="hola@dominio.com">
+            <br>
+            <label for="telefono">¿Te llamo?</label>
+            <br>
+            <input type="tel" id="telefono" name="telefono" placeholder="+34 777 77 77 77">
+            <br>
+            <label for="ubicacion">¿De dónde eres?</label>
+            <br>
+            <input type="text" id="ubicacion" name="ubicacion" placeholder="País y ciudad">
+        </fieldset>
+        <fieldset>
+            <legend>Vamos al grano</legend>
+            <label for="tipo-proyecto">¿Qué tipo de web necesitas?</label>
+            <select id="tipo-proyecto" name="tipo_proyecto" required>
+                <option value="">Elige una opción</option>
+                <option value="corporativa">Web corporativa</option>
+                <option value="tienda">Tienda online</option>
+                <option value="portafolio">Portafolio personal</option>
+                <option value="blog">Blog</option>
+                <option value="landing">Landing page</option>
+                <option value="otro">Algo diferente</option>
+            </select>
+            <br>
+            <textarea name="algodiferente" id="algodiferente" placeholder="Si quieres algo diferente cuéntamelo aquí..." cols="30" rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Cuéntame tu idea 💡</legend>
+        
+            <label for="descripcion">¿Qué tienes en mente? Cuéntamelo con tus palabras</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+        
+            <label>¿Qué debería poder hacer tu web?</label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Inspiración y estilo 🎨</legend>
+        
+            <label for="referencias">¿Has visto alguna web que te guste? (déjame el enlace)</label>
+            <input type="url" id="referencias" name="referencias" placeholder="https://">
         </fieldset>
     </form>
 </body>
