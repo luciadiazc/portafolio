@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuéntame tu idea</title>
+</head>
+<body>
+    <header>
+        <h1>Tu proyecto empieza aquí</h1>
+        <p>Cuéntame qué tienes en mente y veamos juntos cómo hacerlo realidad.</p>
+    </header>
+    <form action="https://getform.io/f/bwnvvmja" method="post">
+        <fieldset>
+            <legend>Empecemos por lo básico</legend>
+            <label for="nombre">¿Cómo te llamas?</label>
+            <br>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="empresa">¿Es para tu empresa?</label>
+            <br>
+            <input type="text" id="empresa" name="empresa" placeholder="Dime cómo se llama">
+            <br>
+            <label for="email">¿A qué email te escribo?</label>
+            <br>
+            <input type="email" id="email" name="email" required placeholder="hola@dominio.com">
+            <br>
+            <label for="telefono">¿Te llamo?</label>
+            <br>
+            <input type="tel" id="telefono" name="telefono" placeholder="+34 777 77 77 77">
+            <br>
+            <label for="ubicacion">¿De dónde eres?</label>
+            <br>
+            <input type="text" id="ubicacion" name="ubicacion" placeholder="Ciudad y País">
+        </fieldset>
+                <fieldset>
+            <legend>¿En qué puedo ayudarte?</legend>
+
+            <input type="checkbox" id="branding" name="servicios[]" value="branding">
+            <label for="branding">Branding e identidad visual</label><br>
+
+            <input type="checkbox" id="diseno" name="servicios[]" value="diseno">
+            <label for="diseno">Diseño gráfico</label><br>
+
+            <input type="checkbox" id="web" name="servicios[]" value="web">
+            <label for="web">Diseño y desarrollo web</label><br>
+
+            <input type="checkbox" id="uxui" name="servicios[]" value="uxui">
+            <label for="uxui">UX / UI</label><br>
+            <br>
+            <fieldset>
+    <legend>Sobre tu marca</legend>
+
+    <label for="estado-marca">
+        ¿En qué punto está tu marca ahora mismo?
+    </label><br>
+
+    <select id="estado-marca" name="estado_marca">
+        <option value="">Cuéntame un poco</option>
+        <option value="desde-cero">Estoy empezando desde cero</option>
+        <option value="ya-existe">Ya existe, pero necesita un rediseño</option>
+        <option value="solo-ajustes">Solo quiero mejorar algunas cosas</option>
+    </select> <br>
+    <br>
+    <label for="personalidad">
+        Si tu marca fuera una persona… ¿cómo sería?
+    </label><br>
+
+    <textarea
+        id="personalidad"
+        name="personalidad"
+        rows="4"
+        placeholder="Ej: cercana, atrevida, minimal, elegante, rebelde…"></textarea><br>
+    <br>
+    <label for="publico">
+        ¿A quién va dirigido tu proyecto?
+    </label><br>
+
+    <textarea
+        id="publico"
+        name="publico"
+        rows="3"
+        placeholder="Personas, marcas, edad aproximada, sector…"></textarea>
+</fieldset>
+<br>
+            <label for="tipo-proyecto">¿Qué tipo de web necesitas?</label>
+            <select id="tipo-proyecto" name="tipo_proyecto" required>
+                <option value="">Elige una opción</option>
+                <option value="corporativa">Web corporativa</option>
+                <option value="tienda">Tienda online</option>
+                <option value="portafolio">Portafolio personal</option>
+                <option value="blog">Blog</option>
+                <option value="landing">Landing page</option>
+                <option value="otro">Algo diferente</option>
+            </select>
+            <br>
+            <textarea name="algodiferente" id="algodiferente" placeholder="Si quieres algo diferente cuéntamelo aquí..." cols="30" rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Cuéntame tu idea </legend>
+        
+            <label for="descripcion">¿Qué tienes en mente? Cuanto más me cuentes, mejor</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Inspiración y estilo</legend>
+        
+            <label for="referencias">¿Has visto alguna web que te guste? (déjame el enlace)</label>
+            <input type="url" id="referencias" name="referencias" placeholder="https://">
+        </fieldset>
+         <button type="submit">Enviar mensaje 🚀</button>
+    </form>
+</body>
+</html>

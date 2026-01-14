@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML formulario</h1>
+    </header>
+    <form action="" method="get">
+        <h2>Formulario de búsqueda</h2>
+        <input type="search">
+    </form>
+    <hr>
+    <form action="https://getform.io/f/aejvryvb" method="post">
+        <h2>Formulario de regalo de navidad</h2>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Tu nombre" name="nombre" id="nombre">
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" placeholder="Tus apellidos" name="apellidos" id="apellidos">
+            <br>
+            <label for="correoelectronico">Correo electrónico:</label>
+            <input type="email" placeholder="hola@dominio.com" name="correoelectronico" id="correoelectronico" required>
+            <br>
+            <label for="fechadenacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechadenacimiento" id="fechadenacimiento" max="2007-12-17">
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="18" value="18">
+            <br>
+            <label for="tel">Teléfono</label>
+            <input type="tel" name="tel" id="tel" placeholder="+34 666 66 66 66">
+        </fieldset>
+        <fieldset>
+            <legend>Regalos</legend>
+            <p>¿Qué tipo de regalo prefieres?</p>
+            <input type="radio" id="sentimental" name="tiporegalo" value="sentimental">
+            <label for="sentimental">Sentimental</label>
+            <input type="radio" id="material" name="tiporegalo" value="material">
+            <label for="material">Material</label>
+
+            <p>Juguetes preferidos</p>
+            <input type="checkbox" id="doll" name="juguetes[]" value="doll">
+            <label for="doll">Muñecas</label>
+            <input type="checkbox" id="camiones" name="juguetes[]" value="camiones">
+            <label for="camiones">Camiones</label>
+            <input type="checkbox" id="bicicleta" name="juguetes[]" value="bicicleta">
+            <label for="bicicleta">Bicicletas</label>
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <input type="password" name="">
+            <input type="color">
+            <input type="file">
+            <fieldset>
+                <legend>Más datos</legend>
+                <label for="comments">Comentarios</label>
+                <textarea name="comentarios" id="comments" placeholder="Deja aquí tus comentarios" cols="30"
+                    rows="6"></textarea>
+                <br>
+                <p>¿Qué días quieres recibir los regalos?</p>
+                <select name="diaregalos" id="diaregalos">
+                    <option value="papanoel" selected>Papá Noel</option>
+                    <option value="reyes">Reyes Magos</option>
+                    <option value="indiferente">Me da igual</option>
+                </select>
+            </fieldset>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
